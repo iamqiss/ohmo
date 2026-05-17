@@ -7,7 +7,7 @@
 **Electric rides. Elevated experiences.**
 
 *The world's first EV-native mobility and social discovery platform.*  
-*Built entirely in Rust. Owned entirely by one person.*
+*Built entirely in Rust.*
 
 <br />
 
