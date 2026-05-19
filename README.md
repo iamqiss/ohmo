@@ -426,17 +426,6 @@ All vehicles equipped with Teltonika OBD-II telematics dongles on private cellul
 
 ---
 
-## Team
-
-| Person | Role |
-|--------|------|
-| **Neo Qiss** `@neoqiss` | Founder, Systems Architect, Rust Engineer |
-| **Rishen Govender** | Head of Fleet & EV Mechanics |
-| **Khumo** | Head of Cybersecurity |
-| **Ivani** | UI/UX Design Lead |
-| **Peter Liu** | Fleet Supply Partner |
-
----
 
 ## The Philosophy
 
