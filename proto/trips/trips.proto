@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package ohmo.trips;
+
+// TripService service definition
+service TripService {
+  rpc CreateTrip (CreateTripRequest) returns (Trip);
+  rpc GetTrip (GetTripRequest) returns (Trip);
+  rpc UpdateTrip (UpdateTripRequest) returns (Trip);
+  rpc CompleteTrip (CompleteTripRequest) returns (CompleteTripResponse);
+  rpc RateTrip (RateTripRequest) returns (RateTripResponse);
+}

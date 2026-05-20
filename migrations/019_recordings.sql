@@ -1,0 +1,2 @@
+-- Trip recording metadata (not audio blobs)
+-- TODO: implement

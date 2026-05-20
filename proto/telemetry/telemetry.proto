@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package ohmo.telemetry;
+
+// TelemetryService service definition
+service TelemetryService {
+  rpc PushTelemetry (VehicleTelemetry) returns (TelemetryAck);
+  rpc GetVehicleSoC (VehicleSoCRequest) returns (VehicleSoCResponse);
+  rpc GetDongleHealth (DongleHealthRequest) returns (DongleHealthResponse);
+}

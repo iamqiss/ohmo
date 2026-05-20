@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package ohmo.dispatch;
+
+// DispatchService service definition
+service DispatchService {
+  rpc RequestTrip (TripRequest) returns (TripAssignment);
+  rpc CancelTrip (CancelTripRequest) returns (CancelTripResponse);
+  rpc AcceptTrip (AcceptTripRequest) returns (AcceptTripResponse);
+  rpc DeclineTrip (DeclineTripRequest) returns (DeclineTripResponse);
+  rpc GetDriverScore (DriverScoreRequest) returns (DriverScoreResponse);
+}

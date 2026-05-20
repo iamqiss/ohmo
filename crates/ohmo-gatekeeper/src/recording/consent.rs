@@ -1,0 +1,3 @@
+//! Recording: consent
+
+// TODO: implement

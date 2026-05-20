@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package ohmo.fleet;
+
+// FleetService service definition
+service FleetService {
+  rpc RegisterVehicle (RegisterVehicleRequest) returns (RegisterVehicleResponse);
+  rpc GetVehicle (GetVehicleRequest) returns (Vehicle);
+  rpc ListVehicles (ListVehiclesRequest) returns (ListVehiclesResponse);
+  rpc UpdateStatus (UpdateStatusRequest) returns (UpdateStatusResponse);
+}

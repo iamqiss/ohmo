@@ -1,0 +1,3 @@
+//! Model: signal
+
+// TODO: implement

@@ -1,0 +1,2 @@
+-- Operator audit trail — immutable
+-- TODO: implement

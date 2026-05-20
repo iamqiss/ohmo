@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package ohmo.social;
+
+// SocialService service definition
+service SocialService {
+  rpc Follow (FollowRequest) returns (FollowResponse);
+  rpc Unfollow (UnfollowRequest) returns (UnfollowResponse);
+  rpc GetPresence (PresenceRequest) returns (PresenceResponse);
+  rpc GetFriends (GetFriendsRequest) returns (GetFriendsResponse);
+}

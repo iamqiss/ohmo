@@ -1,0 +1,38 @@
+[package]
+name = "ohmo-gateway"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ohmo-gateway"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+anyhow = "1"
+tracing = "1"
+tracing-subscriber = "1"
+tonic = "0.11"
+prost = "0.12"
+axum = { version = "0.7", features = ["ws"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio-native-tls", "uuid", "chrono"] }
+redis = { version = "0.24", features = ["tokio-comp"] }
+ohmo-core = { path = "../../crates/ohmo-core" }
+ohmo-auth = { path = "../../crates/ohmo-auth" }
+ohmo-gatekeeper = { path = "../../crates/ohmo-gatekeeper" }
+ohmo-dispatch = { path = "../../crates/ohmo-dispatch" }
+ohmo-trips = { path = "../../crates/ohmo-trips" }
+ohmo-places = { path = "../../crates/ohmo-places" }
+ohmo-payments = { path = "../../crates/ohmo-payments" }
+ohmo-charging = { path = "../../crates/ohmo-charging" }
+ohmo-social = { path = "../../crates/ohmo-social" }
+ohmo-messaging = { path = "../../crates/ohmo-messaging" }
+ohmo-notifications = { path = "../../crates/ohmo-notifications" }
+ohmo-support = { path = "../../crates/ohmo-support" }

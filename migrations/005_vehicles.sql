@@ -1,0 +1,2 @@
+-- Vehicles, telemetry config, dongle assignment
+-- TODO: implement

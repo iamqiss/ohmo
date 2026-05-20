@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package ohmo.notifications;
+
+// NotificationsService service definition
+service NotificationsService {
+  rpc SendPush (PushRequest) returns (PushResponse);
+  rpc Subscribe (SubscribeRequest) returns (stream NotificationEvent);
+}

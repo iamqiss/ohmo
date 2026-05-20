@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package ohmo.messaging;
+
+// MessagingService service definition
+service MessagingService {
+  rpc SendMessage (SendMessageRequest) returns (Message);
+  rpc GetMessages (GetMessagesRequest) returns (GetMessagesResponse);
+  rpc MarkRead (MarkReadRequest) returns (MarkReadResponse);
+}

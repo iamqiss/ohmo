@@ -1,0 +1,2 @@
+-- Friends, groups, presence, privacy settings
+-- TODO: implement

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package ohmo.support;
+
+// SupportService service definition
+service SupportService {
+  rpc CreateTicket (CreateTicketRequest) returns (Ticket);
+  rpc GetTicket (GetTicketRequest) returns (Ticket);
+  rpc ReportIncident (IncidentRequest) returns (IncidentResponse);
+}

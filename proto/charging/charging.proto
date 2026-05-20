@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package ohmo.charging;
+
+// ChargingService service definition
+service ChargingService {
+  rpc GetNearestHub (NearestHubRequest) returns (NearestHubResponse);
+  rpc GetHubStatus (HubStatusRequest) returns (HubStatusResponse);
+  rpc StartSession (StartSessionRequest) returns (ChargingSession);
+  rpc EndSession (EndSessionRequest) returns (EndSessionResponse);
+}

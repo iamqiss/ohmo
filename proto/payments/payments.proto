@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package ohmo.payments;
+
+// PaymentsService service definition
+service PaymentsService {
+  rpc ProcessPayment (ProcessPaymentRequest) returns (ProcessPaymentResponse);
+  rpc RequestPayout (PayoutRequest) returns (PayoutResponse);
+  rpc GetBalance (GetBalanceRequest) returns (GetBalanceResponse);
+}

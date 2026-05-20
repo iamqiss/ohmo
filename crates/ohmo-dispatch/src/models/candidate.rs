@@ -1,0 +1,3 @@
+//! Model: candidate
+
+// TODO: implement

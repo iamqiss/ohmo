@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package ohmo.places;
+
+// PlacesService service definition
+service PlacesService {
+  rpc SearchPlaces (SearchPlacesRequest) returns (SearchPlacesResponse);
+  rpc GetPlace (GetPlaceRequest) returns (Place);
+  rpc GetVibes (GetVibesRequest) returns (GetVibesResponse);
+  rpc GetTonight (GetTonightRequest) returns (GetTonightResponse);
+}
